@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transiciones</title>
+	<style type="text/css">
+	#caja1{
+		width: 100px;
+		height: 100px;
+		background: black;
+		transition: width 2s, height 4s;
+		transition-timing-function:linear;
+	}
+	#caja1:hover{
+		width: 300px;
+		height: 300px;
+
+	}
+
+	#caja2{
+		width: 100px;
+		height: 100px;
+		position: relative;
+		background:red;
+		animation-name: cambiarcolor;
+		animation-duration: 5s;
+		animation-iteration-count: 5;
+	}
+
+	@keyframes cambiarcolor{
+
+	0% {background-color: red; left: 0px; top:0px,}
+	25% {background-color: yellow;left: 200px; top:0px}
+    50% {background-color: green;left: 200px; top:200px;border-radius: 50%}
+    75% {background-color: blue;left: 0px; top:200px}
+    100% {background-color: red;left: 0px; top:0px;border-radius: 80%}
+
+
+	}
+	</style>
+</head>
+<body>
+<div id="caja1">
+</div>
+
+<div id="caja2">
+</div>
+
+</body>
+</html>
